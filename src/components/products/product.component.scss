@@ -1,0 +1,36 @@
+.products {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+
+  .product {
+    border-radius: 5px;
+    border: 1px solid #ddb410;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+
+    .image > img{
+      margin-top:20px;
+      width: 60px;
+      height: 60px;
+    }
+    .value {
+      margin-top: 10px;
+      color: black;
+      font-weight: 600;
+    }
+    span {
+      display: block;
+    }
+    .inStock {
+      color: red;
+      display: block;
+      margin: 10px 0;
+    }
+  }
+}

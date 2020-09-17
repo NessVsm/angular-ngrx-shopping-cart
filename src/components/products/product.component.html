@@ -1,0 +1,17 @@
+<div class="products">
+  <div class="product"
+   *ngFor="let item of productsList">
+   <div class="image">
+     <img src="{{item.imageUrl}}"/>
+   </div>
+   <span class="name">{{item.name}}</span>
+   <span class="value"> R$ {{item.price}} </span>
+   <span class="inStock"> Poucas unidades!</span>
+   <div class="offer d-flex justify-content-center">
+      <button (click)="removeFromCart(item)" 
+      [disabled]="checkButton(item, 'remove')">-</button>
+      <button (click)="addToCart(item)"
+       [disabled]="checkButton(item, 'add')">+</button>
+    </div>
+  </div>
+</div>
